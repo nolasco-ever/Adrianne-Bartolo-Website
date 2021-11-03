@@ -99,4 +99,63 @@
   }
 }
 
+#header-nav {
+  height: 15vh;
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#header-nav #header-content {
+  width: 95vw;
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#header-nav #header-content #profile-info {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  height: inherit;
+}
+#header-nav #header-content #profile-info #header-avatar {
+  height: 5vw;
+  width: 5vw;
+  border: 3px #000 solid;
+}
+#header-nav #header-content #profile-info div {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#header-nav #header-content #profile-info div p, #header-nav #header-content #profile-info div h3 {
+  margin: 0 0 0 1vw;
+}
+#header-nav #header-content #profile-info div p {
+  font-size: 1rem;
+}
+#header-nav #header-content #profile-info div h3 {
+  font-size: 1.25rem;
+}
+#header-nav #header-content #button-group {
+  width: 20%;
+  height: 50%;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+}
+#header-nav .bottom-border {
+  width: 95vw;
+  position: absolute;
+  bottom: 0;
+  margin-left: 2.5vw;
+  border-bottom: 1px solid #000;
+}
+
 /*# sourceMappingURL=App.css.map */

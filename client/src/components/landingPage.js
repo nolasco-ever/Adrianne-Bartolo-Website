@@ -6,7 +6,7 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 //import component
 import AdrianneProfile from './images/Adrianne_Bartolo.jpg'
 
-export default function pageMenu() {
+export default function LandingPage() {
     const theme = createTheme({
         palette: {
           primary: {

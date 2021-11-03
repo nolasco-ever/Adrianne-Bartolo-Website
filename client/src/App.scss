@@ -93,3 +93,71 @@ $primary-background: #F5F5DC;
         }
     }
 }
+
+#header-nav{
+    height: 15vh;
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    #header-content{
+        width: 95vw;
+        align-self: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        #profile-info{
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            height: inherit;
+
+            #header-avatar{
+                height: 5vw;
+                width:  5vw;
+                border: 3px #000 solid;
+            }
+
+            div{
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                p, h3{
+                    margin: 0 0 0 1vw;
+                }
+
+                p{
+                    font-size: 1rem;
+                }
+
+                h3{
+                    font-size: 1.25rem;
+                }
+            }
+        }
+
+        #button-group{
+            width: 20%;
+            height: 50%;
+            margin-top: auto;
+            margin-bottom: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-content: center;
+        }
+    }
+
+    .bottom-border{
+        width: 95vw;
+        position: absolute;
+        bottom: 0;
+        margin-left: 2.5vw;
+        border-bottom: 1px solid #000;
+    }
+}

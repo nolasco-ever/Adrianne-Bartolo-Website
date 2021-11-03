@@ -1,20 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
 import {
   BrowserRouter as Router,
   Switch,
-  Route
+  Route,
+  Link
 } from "react-router-dom";
 
 //import necessary components
-import PageMenu from './components/pageMenu';
+import LandingPage from './components/landingPage';
+import MainPage from './components/mainPage';
 
 function App() {
   return (
     <Router>
+
       <Switch>
         <Route exact path="/">
-          <PageMenu/>
+          {/* <LandingPage/> */}
+          <MainPage/>
+        </Route>
+
+        <Route path='/mainpage'>
+          <MainPage/>
         </Route>
       </Switch>
     </Router>
