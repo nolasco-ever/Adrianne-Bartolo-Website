@@ -8,6 +8,7 @@ import {
 
   //import necessary components
   import AboutMe from './aboutMe';
+  import Projects from './projects';
   import Header from './header';
 
 export default function MainPage() {
@@ -16,7 +17,7 @@ export default function MainPage() {
             <Header/>
             <Switch>
                 <Route exact path="/">
-                    <AboutMe/>
+                    <Projects/>
                 </Route>
             </Switch>
         </Router>

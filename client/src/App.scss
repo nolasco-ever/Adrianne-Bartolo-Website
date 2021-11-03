@@ -161,3 +161,31 @@ $primary-background: #F5F5DC;
         border-bottom: 1px solid #000;
     }
 }
+
+#about-me-page{
+    height: 85vh;
+
+    #button-group{
+        position: absolute;
+        bottom: 10vh;
+        right: 15vh;
+        width: 10vw;
+    }
+
+    #add-button{
+        position: absolute;
+        bottom: 5vh;
+        right: 5vh;
+        height: 5vw;
+        width: 5vw;
+    }
+}
+
+#projects-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    height: 5vh;
+    margin-top: 5vh;
+}
