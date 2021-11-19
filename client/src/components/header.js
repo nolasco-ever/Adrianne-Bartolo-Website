@@ -1,5 +1,5 @@
 import React from 'react'
-import { Avatar, Button } from '@mui/material';
+import { Avatar, ButtonGroup, Button } from '@mui/material';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 //import component
@@ -18,6 +18,14 @@ export default function Header() {
         },
       });
 
+      //Buttons array
+      const buttons = [
+        <Button key="one">Twitter</Button>,
+        <Button key="two">Email</Button>,
+        <Button key="three">LinkedIn</Button>,
+        <Button key="four">Calendly</Button>,
+    ];
+
     return (
         <div id="header-nav">
             <div id="header-content">
@@ -28,6 +36,15 @@ export default function Header() {
                         <p>Marketing Associate</p>
                     </div>
                 </div>
+
+                <ButtonGroup
+                    id="contact-button-group"
+                    orientation="vertical"
+                    aria-label="vertical contained button group"
+                    variant="contained"
+                >
+                    {buttons}
+                </ButtonGroup>
 
                 <div id="button-group">
                     <ThemeProvider theme={theme}>
