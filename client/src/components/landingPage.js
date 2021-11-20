@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { useHistory } from 'react-router';
 import { Avatar, Button } from '@mui/material';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
@@ -19,6 +19,8 @@ export default function LandingPage() {
         },
       });
 
+      const history = useHistory();
+
     return (
         <div className="container" id="page-menu-container">
             <Avatar id="page-menu-avatar" alt="Adrianne Bartolo" src={AdrianneProfile}/>
@@ -31,8 +33,8 @@ export default function LandingPage() {
             <div id="divider"></div>
 
             <ThemeProvider theme={theme}>
-                <Button>About Me</Button>
-                <Button>Projects</Button>
+                <Button onClick={() => history.push('/mainpage/aboutme')}>About Me</Button>
+                <Button onClick={() => history.push('/mainpage/projects')}>Projects</Button>
             </ThemeProvider>
         </div>
     )

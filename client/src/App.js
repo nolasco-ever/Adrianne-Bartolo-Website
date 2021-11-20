@@ -17,7 +17,7 @@ function App() {
       <Switch>
         <Route exact path="/">
           {/* <LandingPage/> */}
-          <MainPage/>
+          <LandingPage/>
         </Route>
 
         <Route path='/mainpage'>

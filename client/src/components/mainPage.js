@@ -16,8 +16,12 @@ export default function MainPage() {
         <Router>
             <Header/>
             <Switch>
-                <Route exact path="/">
+                <Route exact path="/mainpage/aboutme">
                     <AboutMe/>
+                </Route>
+
+                <Route path="/mainpage/projects">
+                    <Projects/>
                 </Route>
             </Switch>
         </Router>
