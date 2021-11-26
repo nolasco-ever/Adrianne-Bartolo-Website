@@ -75,3 +75,35 @@
         margin-right: auto;
     }
 }
+
+#projects-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1vh;
+}
+
+#projects-container{
+    height: 81vh;
+    display: flex;
+
+    div{
+        flex: 1;
+    }
+
+    #projects-grid-container{
+        background-color: green;
+        overflow-x: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        img{
+            background-color: #fff;
+            height: auto;
+        }
+    }
+
+    #projects-display-container{
+        background-color: blue;
+    }
+}

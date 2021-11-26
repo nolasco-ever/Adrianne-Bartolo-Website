@@ -3,6 +3,9 @@ import React from 'react';
   import { Button } from '@mui/material';
   import { createTheme, ThemeProvider } from '@mui/material/styles';
 
+  //import component
+import AdrianneProfile from './images/Adrianne_Bartolo.jpg'
+
 export default function Projects() {
     const theme = createTheme({
         palette: {
@@ -27,23 +30,16 @@ export default function Projects() {
 
         <div id="projects-container">
           <div id="projects-grid-container">
-            <div>
-              <img/>
-              <img/>
-              <img/>
-              <img/>
-              <img/>
-              <img/>
-              <img/>
-              <img/>
-              <img/>
-              <img/>
-              <img/>
-              <img/>
-              <img/>
-              <img/>
-              <img/>
-            </div>
+              <img src={AdrianneProfile}/>
+              <img src={AdrianneProfile}/>
+              <img src={AdrianneProfile}/>
+              <img src={AdrianneProfile}/>
+              <img src={AdrianneProfile}/>
+              <img src={AdrianneProfile}/>
+              <img src={AdrianneProfile}/>
+              <img src={AdrianneProfile}/>
+              <img src={AdrianneProfile}/>
+              <img src={AdrianneProfile}/>
           </div>
 
           <div id="projects-display-container">

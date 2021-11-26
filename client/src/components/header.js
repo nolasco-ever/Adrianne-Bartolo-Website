@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Avatar, ButtonGroup, Button } from '@mui/material';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { useSpring, animated } from 'react-spring'
+import { useHistory } from 'react-router';
 
 //import component
 import AdrianneProfile from './images/Adrianne_Bartolo.jpg'
@@ -62,6 +63,8 @@ export default function Header() {
         }
     }
 
+    const history = useHistory();
+
     return (
         <div id="header-nav">
             <div id="header-content">
@@ -86,8 +89,8 @@ export default function Header() {
 
                 <div id="button-group">
                     <ThemeProvider theme={theme}>
-                        <Button size="large">About Me</Button>
-                        <Button size="large">Projects</Button>
+                        <Button onClick={() => history.push('/mainpage/aboutme')} size="large">About Me</Button>
+                        <Button onClick={() => history.push('/mainpage/projects')} size="large">Projects</Button>
                     </ThemeProvider>
                 </div>
             </div>

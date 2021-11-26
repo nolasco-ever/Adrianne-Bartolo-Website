@@ -62,4 +62,32 @@
   margin-right: auto;
 }
 
+#projects-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 1vh;
+}
+
+#projects-container {
+  height: 81vh;
+  display: flex;
+}
+#projects-container div {
+  flex: 1;
+}
+#projects-container #projects-grid-container {
+  background-color: green;
+  overflow-x: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+#projects-container #projects-grid-container img {
+  background-color: #fff;
+  height: auto;
+}
+#projects-container #projects-display-container {
+  background-color: blue;
+}
+
 /*# sourceMappingURL=App.css.map */
