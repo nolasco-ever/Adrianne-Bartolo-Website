@@ -30,6 +30,7 @@
   border-radius: 5px;
   padding: 1vw;
   height: 90%;
+  z-index: 30;
   transition: 0.3s ease-in;
 }
 #header-nav #header-content #profile-info #header-avatar {
@@ -49,10 +50,10 @@
   position: absolute;
   top: 0.5vh;
   opacity: 0;
-  z-index: -1;
+  z-index: 20;
 }
 #header-nav #header-content #container-contact-button-group #contact-button-group {
-  width: 18.25vw;
+  width: 17.75vw;
 }
 #header-nav .bottom-border {
   background-color: #000;
@@ -72,22 +73,43 @@
 #projects-container {
   height: 81vh;
   display: flex;
-}
-#projects-container div {
-  flex: 1;
+  position: relative;
 }
 #projects-container #projects-grid-container {
-  background-color: green;
+  position: absolute;
+  width: 100vw;
+  height: inherit;
   overflow-x: auto;
+  z-index: 10;
+  background-color: #D8A6A7;
+}
+#projects-container #projects-grid-container div {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50vw;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 0.5vw;
+  column-gap: 0.5vw;
+  padding: 0.5vw;
+  box-sizing: border-box;
 }
-#projects-container #projects-grid-container img {
+#projects-container #projects-grid-container div img {
   background-color: #fff;
-  height: auto;
+  width: 100%;
+  height: 16vw;
+  object-fit: cover;
+  border-radius: 5px;
+  transition: 0.5s ease;
+}
+#projects-container #projects-grid-container div img:hover {
+  filter: brightness(50%);
 }
 #projects-container #projects-display-container {
-  background-color: blue;
+  position: absolute;
+  width: 50vw;
+  height: inherit;
+  right: 0;
 }
 
 /*# sourceMappingURL=App.css.map */

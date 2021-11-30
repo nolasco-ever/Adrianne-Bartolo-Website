@@ -65,6 +65,36 @@ export default function Header() {
 
     const history = useHistory();
 
+    const body = document.querySelector("body");
+
+    const aboutMeColor = useSpring({
+        backgroundColor: "#F5F5DC",
+
+        from: {
+            backgroundColor: "#E4AFB0"
+        },
+        reset: true
+    })
+
+    const projectsColor = useSpring({
+        backgroundColor: "#E4AFB0",
+
+        from: {
+            backgroundColor: "#F5F5DC"
+        },
+        reset: true
+    })
+
+    function goToAboutMe(){
+        document.body.style = 'background: #F5F5DC;';
+        history.push('/mainpage/aboutme')
+    }
+
+    function goToProjects(){
+        document.body.style = 'background: #E4AFB0;';
+        history.push('/mainpage/projects')
+    }
+
     return (
         <div id="header-nav">
             <div id="header-content">
@@ -89,8 +119,8 @@ export default function Header() {
 
                 <div id="button-group">
                     <ThemeProvider theme={theme}>
-                        <Button onClick={() => history.push('/mainpage/aboutme')} size="large">About Me</Button>
-                        <Button onClick={() => history.push('/mainpage/projects')} size="large">Projects</Button>
+                        <Button onClick={goToAboutMe} size="large">About Me</Button>
+                        <Button onClick={goToProjects} size="large">Projects</Button>
                     </ThemeProvider>
                 </div>
             </div>
